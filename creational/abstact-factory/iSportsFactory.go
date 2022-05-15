@@ -7,12 +7,12 @@ type iSportsFactory interface {
 	makeShirt() iShirt
 }
 
-func getSportsFactory(brand string) (iSportsFactory,error) {
-	switch brand{
+func getSportsFactory(brand string) (iSportsFactory, error) {
+	switch brand {
 	case "adidas":
-		return &adidas{},nil
+		return &adidas{}, nil
 	case "nike":
-		return &nike{},nil
+		return &nike{}, nil
 	default:
 		return nil, fmt.Errorf("Wrong brand")
 	}

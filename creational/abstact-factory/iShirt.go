@@ -1,4 +1,4 @@
-package  main
+package main
 
 type iShirt interface {
 	setLogo(logo string)

@@ -1,4 +1,4 @@
-package main 
+package main
 
 type adidas struct {
 }
@@ -15,9 +15,8 @@ func (a *adidas) makeShoe() iShoe {
 func (a *adidas) makeShirt() iShirt {
 	return &adidasShirt{
 		shirt: shirt{
-			logo:"adidas",
+			logo: "adidas",
 			size: 42,
 		},
 	}
 }
-

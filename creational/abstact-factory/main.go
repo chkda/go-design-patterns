@@ -3,8 +3,8 @@ package main
 import "fmt"
 
 func main() {
-	adidasFactory,_ := getSportsFactory("adidas")
-	nikeFactory,_ := getSportsFactory("nike")
+	adidasFactory, _ := getSportsFactory("adidas")
+	nikeFactory, _ := getSportsFactory("nike")
 
 	adidas_shoe := adidasFactory.makeShoe()
 	adidas_shirt := adidasFactory.makeShirt()
@@ -20,11 +20,11 @@ func main() {
 }
 
 func printShoeDetails(s iShoe) {
-	fmt.Println("Shoe Logo:",s.getLogo())
-	fmt.Println("Shoe Size:",s.getSize())
+	fmt.Println("Shoe Logo:", s.getLogo())
+	fmt.Println("Shoe Size:", s.getSize())
 }
 
 func printShirtDetails(s iShirt) {
-	fmt.Println("Shirt Logo:",s.getLogo())
-	fmt.Println("Shirt Size:",s.getSize())
+	fmt.Println("Shirt Logo:", s.getLogo())
+	fmt.Println("Shirt Size:", s.getSize())
 }
